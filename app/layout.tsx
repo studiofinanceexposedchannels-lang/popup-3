@@ -40,6 +40,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              history.pushState(null, document.title, location.href);
+              window.addEventListener('popstate', function () {
+                window.location.href = 'https://pop-bk1-5.vercel.app';
+              });
+            `,
+          }}
+        />
+      </head>
       <body className="antialiased">
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
