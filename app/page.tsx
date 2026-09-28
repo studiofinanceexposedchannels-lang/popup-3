@@ -1,4 +1,4 @@
-const checkoutUrl = 'https://go.centerpag.com/PPU38CQG93D'
+const checkoutUrl = 'https://pay.hotmart.com/X107706797J?off=xpwtmpjr&checkoutMode=10'
 const declineUrl = 'https://pop-bk1-5.vercel.app'
 
 export default function Page() {
